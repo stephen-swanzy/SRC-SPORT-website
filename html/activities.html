@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SRC Sports Academy | New Activities</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">SRC Sports Academy</a>
+    <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a class="active" href="activities.html">New Activities</a>
+      <a href="blog.html">Blog</a>
+      <a href="events.html">Events</a>
+      <a href="register.html">Register</a>
+      <a class="book-link" href="booking.html">Book Now</a>
+    </nav>
+  </header>
+
+  <main class="page-shell">
+    <section class="page-hero">
+      <p class="eyebrow">Expanded programmes</p>
+      <h1>New sports for the SRC community.</h1>
+      <p>Wrestling, taekwondo, judo, and volleyball are being introduced to broaden student participation and attract community athletes.</p>
+    </section>
+
+    <section class="section card-grid two-column">
+      <article class="feature-card searchable">
+        <h2>Wrestling</h2>
+        <p>Focus areas include stance, balance, controlled takedowns, safe mat movement, and tournament etiquette.</p>
+      </article>
+      <article class="feature-card searchable">
+        <h2>Taekwondo</h2>
+        <p>Sessions develop flexibility, kicking technique, reaction speed, discipline, and respectful sparring.</p>
+      </article>
+      <article class="feature-card searchable">
+        <h2>Judo</h2>
+        <p>Students learn falling safely, throws, hold-downs, body control, and the values of mutual welfare.</p>
+      </article>
+      <article class="feature-card searchable">
+        <h2>Volleyball</h2>
+        <p>Training covers serving, reception, teamwork, rotations, attack timing, and communication on court.</p>
+      </article>
+    </section>
+
+    <section class="section forum-panel" aria-labelledby="forum-title">
+      <h2 id="forum-title">Community Q&amp;A Forum</h2>
+      <form class="forum-form" aria-label="Ask a sports question">
+        <label for="question-name">Name</label>
+        <input id="question-name" name="name" type="text" required>
+        <label for="question-text">Question</label>
+        <textarea id="question-text" name="question" rows="4" required></textarea>
+        <button class="primary-button" type="submit">Post Question</button>
+      </form>
+      <div id="forum-list" class="forum-list" aria-live="polite">
+        <article class="question-card searchable">
+          <h3>Can beginners join judo?</h3>
+          <p>Yes. Beginner groups start with safety, falling technique, and basic movement.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <p>New activities support student growth and community participation.</p>
+      <p class="developer-credit">Developer: <a href="mailto:swanzyak47@gmail.com">swanzyak47@gmail.com</a> | <a href="tel:+233557560806">+233 557 560 806</a></p>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="../javascript/app.js"></script>
+</body>
+</html>

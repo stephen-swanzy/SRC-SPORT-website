@@ -1,0 +1,112 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SRC Sports Academy | Register</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">SRC Sports Academy</a>
+    <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="activities.html">New Activities</a>
+      <a href="blog.html">Blog</a>
+      <a href="events.html">Events</a>
+      <a class="active" href="register.html">Register</a>
+      <a class="book-link" href="booking.html">Book Now</a>
+    </nav>
+  </header>
+
+  <main class="page-shell">
+    <section class="page-hero">
+      <p class="eyebrow">Join the academy</p>
+      <h1>Student and community registration.</h1>
+      <p>Complete the form to show interest in a sport and receive a simulated email confirmation.</p>
+    </section>
+
+    <section class="section card-grid three-column">
+      <article class="feature-card searchable">
+        <h3>Booking made easy</h3>
+        <p>Reserve your first training session and see available class times in one place.</p>
+      </article>
+      <article class="feature-card searchable">
+        <h3>Program details</h3>
+        <p>Become familiar with each sport, skill level, and what to expect from every session.</p>
+      </article>
+      <article class="feature-card searchable">
+        <h3>Coach support</h3>
+        <p>Meet our coaches and get guidance on the best programme for your student or community athlete.</p>
+      </article>
+      <article class="feature-card searchable">
+        <h3>Event participation</h3>
+        <p>Sign up for academy events and fixtures right from your registration experience.</p>
+      </article>
+    </section>
+
+    <section class="form-section">
+      <form class="academy-form validate-form" data-form-type="register" aria-label="Registration form">
+        <label for="full-name">Full name</label>
+        <input id="full-name" name="fullName" type="text" required>
+        <label for="email">Email address</label>
+        <input id="email" name="email" type="email" required>
+        <label for="phone">Phone number</label>
+        <input id="phone" name="phone" type="tel" required>
+        <label for="sport">Preferred sport</label>
+        <select id="sport" name="sport" required>
+          <option value="">Choose a sport</option>
+          <option>Wrestling</option>
+          <option>Taekwondo</option>
+          <option>Judo</option>
+          <option>Volleyball</option>
+          <option>Football</option>
+          <option>Rugby</option>
+          <option>Ballet</option>
+          <option>Table Tennis</option>
+          <option>Handball</option>
+          <option>Gymnastics</option>
+        </select>
+        <label class="check-row" for="subscribe">
+          <input id="subscribe" name="subscribe" type="checkbox">
+          Subscribe me to academy emails
+        </label>
+        <div class="captcha-box">
+          <label for="captcha">CAPTCHA: What is <span class="captcha-question">4 + 3</span>?</label>
+          <input id="captcha" name="captcha" type="number" required>
+        </div>
+        <button class="primary-button" type="submit">Submit Registration</button>
+        <p class="form-message" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="section split-section">
+      <div>
+        <p class="eyebrow">Before you join</p>
+        <h2>Registration benefits</h2>
+        <p>Registering gives you access to programmes, expert coaching, event updates, and academy support for every student.</p>
+        <ul class="faq-list">
+          <li><strong>Do I need experience?</strong> No, new and returning athletes are welcome in every sport.</li>
+          <li><strong>What should I bring?</strong> Comfortable clothes, shoes, and a water bottle for training sessions.</li>
+          <li><strong>How do I get updates?</strong> Subscribe to academy announcements during registration.</li>
+        </ul>
+      </div>
+      <aside class="notice-box" aria-label="Registration support">
+        <h2>Need help?</h2>
+        <p>Contact our academy team for questions about fees, uniforms, practice locations, or programme levels.</p>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <p>Registration data is simulated for this academic web design project.</p>
+      <p class="developer-credit">Developer: <a href="mailto:swanzyak47@gmail.com">swanzyak47@gmail.com</a> | <a href="tel:+233557560806">+233 557 560 806</a></p>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="../javascript/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SRC Sports Academy | Book Online</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">SRC Sports Academy</a>
+    <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="activities.html">New Activities</a>
+      <a href="blog.html">Blog</a>
+      <a href="events.html">Events</a>
+      <a href="register.html">Register</a>
+      <a class="book-link active" href="booking.html">Book Now</a>
+    </nav>
+  </header>
+
+  <main class="page-shell">
+    <section class="page-hero">
+      <p class="eyebrow">Email-based booking</p>
+      <h1>Book a training session.</h1>
+      <p>Select a sport, date, and time. The page prepares a confirmation message for the academy email team.</p>
+    </section>
+
+    <section class="form-section split-section">
+      <form class="academy-form validate-form" data-form-type="booking" aria-label="Online booking form">
+        <label for="book-name">Full name</label>
+        <input id="book-name" name="fullName" type="text" required>
+        <label for="book-email">Email address</label>
+        <input id="book-email" name="email" type="email" required>
+        <label for="book-sport">Sport</label>
+        <select id="book-sport" name="sport" required>
+          <option value="">Choose a sport</option>
+          <option>Wrestling</option>
+          <option>Taekwondo</option>
+          <option>Judo</option>
+          <option>Volleyball</option>
+          <option>Football</option>
+          <option>Rugby</option>
+          <option>Ballet</option>
+          <option>Table Tennis</option>
+          <option>Handball</option>
+          <option>Gymnastics</option>
+        </select>
+        <label for="book-date">Preferred date</label>
+        <input id="book-date" name="date" type="date" required>
+        <label for="book-time">Preferred time</label>
+        <input id="book-time" name="time" type="time" required>
+        <label for="book-notes">Training notes</label>
+        <textarea id="book-notes" name="notes" rows="4" placeholder="Tell us your level, goals, or access needs"></textarea>
+        <div class="captcha-box">
+          <label for="book-captcha">CAPTCHA: What is <span class="captcha-question">4 + 3</span>?</label>
+          <input id="book-captcha" name="captcha" type="number" required>
+        </div>
+        <button class="primary-button" type="submit">Send Booking Request</button>
+        <p class="form-message" role="status" aria-live="polite"></p>
+      </form>
+      <aside class="notice-box">
+        <h2>Booking Instructions</h2>
+        <p>Use your active email address. Coaches will confirm venue, kit requirements, and safety instructions before the session.</p>
+        <p>Future versions can connect this booking form to dashboards, payments, and attendance records.</p>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <p>Email booking prototype for SRC Sports Academy.</p>
+      <p class="developer-credit">Developer: <a href="mailto:swanzyak47@gmail.com">swanzyak47@gmail.com</a> | <a href="tel:+233557560806">+233 557 560 806</a></p>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="../javascript/app.js"></script>
+</body>
+</html>
