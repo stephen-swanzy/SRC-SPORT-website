@@ -161,6 +161,7 @@ textarea:focus-visible {
   min-height: 100%;
   object-fit: cover;
   opacity: 0.86;
+  pointer-events: none;
 }
 
 .hero-overlay {
