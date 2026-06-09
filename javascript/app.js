@@ -20,6 +20,20 @@
     });
   }
 
+  function setupProgrammeFilters() {
+    $(".filter-button").on("click", function () {
+      var filter = String($(this).attr("data-filter") || "all");
+
+      $(".filter-button").removeClass("active");
+      $(this).addClass("active");
+
+      $(".sports-grid .sport-card").each(function () {
+        var category = String($(this).attr("data-category") || "");
+        $(this).toggleClass("is-hidden", filter !== "all" && category !== filter);
+      });
+    });
+  }
+
   function setupVisitorCounter() {
     var counter = $("#visitor-count");
     if (!counter.length) {
@@ -95,11 +109,77 @@
     });
   }
 
+  function setupLightbox() {
+    var lightbox = $(".lightbox");
+    var image = lightbox.find("img");
+    var caption = lightbox.find("p");
+
+    $(".gallery-card").on("click", function () {
+      image.attr("src", $(this).data("lightbox-src"));
+      image.attr("alt", $(this).data("lightbox-caption"));
+      caption.text($(this).data("lightbox-caption"));
+      lightbox.addClass("open").attr("aria-hidden", "false");
+    });
+
+    $(".lightbox-close, .lightbox").on("click", function (event) {
+      if (event.target !== this) {
+        return;
+      }
+      lightbox.removeClass("open").attr("aria-hidden", "true");
+      image.attr("src", "");
+    });
+
+    $(document).on("keydown", function (event) {
+      if (event.key === "Escape") {
+        lightbox.removeClass("open").attr("aria-hidden", "true");
+        image.attr("src", "");
+      }
+    });
+  }
+
+  function setupBackToTop() {
+    var button = $(".back-to-top");
+
+    $(window).on("scroll", function () {
+      button.toggleClass("visible", window.scrollY > 500);
+    });
+
+    button.on("click", function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
+
+  function setupScrollReveal() {
+    var revealItems = $(".section, .search-panel").addClass("reveal");
+
+    if (!("IntersectionObserver" in window)) {
+      revealItems.addClass("visible");
+      return;
+    }
+
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          $(entry.target).addClass("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    revealItems.each(function () {
+      observer.observe(this);
+    });
+  }
+
   $(function () {
     setupNavigation();
     setupSearch();
+    setupProgrammeFilters();
     setupVisitorCounter();
     setupForms();
     setupForum();
+    setupLightbox();
+    setupBackToTop();
+    setupScrollReveal();
   });
 })(jQuery);

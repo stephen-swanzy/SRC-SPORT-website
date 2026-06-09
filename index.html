@@ -105,53 +105,59 @@
         <p class="eyebrow">All programmes</p>
         <h2 id="sports-title">Sports Offered</h2>
       </div>
+      <div class="filter-bar" aria-label="Programme filters">
+        <button class="filter-button active" type="button" data-filter="all">All</button>
+        <button class="filter-button" type="button" data-filter="team">Team Sports</button>
+        <button class="filter-button" type="button" data-filter="martial">Martial Arts</button>
+        <button class="filter-button" type="button" data-filter="performance">Dance & Fitness</button>
+      </div>
       <div class="card-grid sports-grid">
-        <article class="sport-card searchable">
+        <article class="sport-card searchable" data-category="martial">
           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Beni_Hassan_tomb_15_wrestling_detail.jpg/960px-Beni_Hassan_tomb_15_wrestling_detail.jpg" alt="Wrestling athletes artwork">
           <h3>Wrestling</h3>
           <p>Strength, balance, takedown defence, and competition readiness.</p>
         </article>
-        <article class="sport-card searchable">
+        <article class="sport-card searchable" data-category="martial">
           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/COOK_%28GBR%29_VS_ZHU_%28CHN%29_BM_-80KGM12.JPG/960px-COOK_%28GBR%29_VS_ZHU_%28CHN%29_BM_-80KGM12.JPG" alt="Taekwondo athletes competing">
           <h3>Taekwondo</h3>
           <p>Speed, kicking technique, sparring discipline, and self-control.</p>
         </article>
-        <article class="sport-card searchable">
+        <article class="sport-card searchable" data-category="martial">
           <img src="https://commons.wikimedia.org/wiki/Special:FilePath/A_judo_competition_(FL61747664).jpg?width=960" alt="Judo athletes during a match">
           <h3>Judo</h3>
           <p>Throws, grappling, safe falling, and respect-based training.</p>
         </article>
-        <article class="sport-card searchable">
+        <article class="sport-card searchable" data-category="team">
           <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Beach_volleyball_ball.png" alt="Volleyball ball">
           <h3>Volleyball</h3>
           <p>Team play, serving, passing, setting, and match tactics.</p>
         </article>
-        <article class="sport-card searchable">
+        <article class="sport-card searchable" data-category="team">
           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Football_in_Bloomington%2C_Indiana%2C_1995.jpg/960px-Football_in_Bloomington%2C_Indiana%2C_1995.jpg" alt="Football players competing">
           <h3>Football</h3>
           <p>Technical drills, fitness, teamwork, and fixture preparation.</p>
         </article>
-        <article class="sport-card searchable">
+        <article class="sport-card searchable" data-category="team">
           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/ST_vs_Gloucester_-_Match_-_23.JPG/960px-ST_vs_Gloucester_-_Match_-_23.JPG" alt="Rugby players in a scrum">
           <h3>Rugby</h3>
           <p>Contact safety, handling, defensive structure, and leadership.</p>
         </article>
-        <article class="sport-card searchable">
+        <article class="sport-card searchable" data-category="performance">
           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Darcey_Bussell%2C_curtain_call_for_Theme_and_Variations_2007.jpg/960px-Darcey_Bussell%2C_curtain_call_for_Theme_and_Variations_2007.jpg" alt="Ballet dancer on stage">
           <h3>Ballet</h3>
           <p>Flexibility, posture, performance confidence, and movement control.</p>
         </article>
-        <article class="sport-card searchable">
+        <article class="sport-card searchable" data-category="team">
           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Mesa_de_ping_pong%2C_Riesstr.%2C_M%C3%BAnich%2C_Alemania_2012-04-28%2C_DD_01.JPG/960px-Mesa_de_ping_pong%2C_Riesstr.%2C_M%C3%BAnich%2C_Alemania_2012-04-28%2C_DD_01.JPG" alt="Table tennis table">
           <h3>Table Tennis</h3>
           <p>Reflexes, serving patterns, footwork, and tournament focus.</p>
         </article>
-        <article class="sport-card searchable">
+        <article class="sport-card searchable" data-category="team">
           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/CZE_vs_FRA_%2801%29_-_2010_European_Men%27s_Handball_Championship.jpg/960px-CZE_vs_FRA_%2801%29_-_2010_European_Men%27s_Handball_Championship.jpg" alt="Handball match in progress">
           <h3>Handball</h3>
           <p>Fast passing, shooting, transition defence, and court awareness.</p>
         </article>
-        <article class="sport-card searchable">
+        <article class="sport-card searchable" data-category="performance">
           <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Gymnastics_brokenchopstick.jpg" alt="Gymnast performing">
           <h3>Gymnastics</h3>
           <p>Core strength, coordination, tumbling basics, and safe progression.</p>
@@ -215,6 +221,85 @@
       </aside>
     </section>
 
+    <section class="section" aria-labelledby="gallery-title">
+      <div class="section-heading">
+        <p class="eyebrow">Photo gallery</p>
+        <h2 id="gallery-title">Academy moments</h2>
+      </div>
+      <div class="gallery-grid">
+        <button class="gallery-card searchable" type="button" data-lightbox-src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Football_in_Bloomington%2C_Indiana%2C_1995.jpg/960px-Football_in_Bloomington%2C_Indiana%2C_1995.jpg" data-lightbox-caption="Football teamwork session">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Football_in_Bloomington%2C_Indiana%2C_1995.jpg/960px-Football_in_Bloomington%2C_Indiana%2C_1995.jpg" alt="Football players competing">
+          <span>Football teamwork</span>
+        </button>
+        <button class="gallery-card searchable" type="button" data-lightbox-src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/COOK_%28GBR%29_VS_ZHU_%28CHN%29_BM_-80KGM12.JPG/960px-COOK_%28GBR%29_VS_ZHU_%28CHN%29_BM_-80KGM12.JPG" data-lightbox-caption="Martial arts discipline">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/COOK_%28GBR%29_VS_ZHU_%28CHN%29_BM_-80KGM12.JPG/960px-COOK_%28GBR%29_VS_ZHU_%28CHN%29_BM_-80KGM12.JPG" alt="Taekwondo athletes competing">
+          <span>Martial arts</span>
+        </button>
+        <button class="gallery-card searchable" type="button" data-lightbox-src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/ST_vs_Gloucester_-_Match_-_23.JPG/960px-ST_vs_Gloucester_-_Match_-_23.JPG" data-lightbox-caption="Rugby match preparation">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/ST_vs_Gloucester_-_Match_-_23.JPG/960px-ST_vs_Gloucester_-_Match_-_23.JPG" alt="Rugby players in a scrum">
+          <span>Rugby training</span>
+        </button>
+        <button class="gallery-card searchable" type="button" data-lightbox-src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Gymnastics_brokenchopstick.jpg" data-lightbox-caption="Gymnastics strength and balance">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Gymnastics_brokenchopstick.jpg" alt="Gymnast performing">
+          <span>Gymnastics</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="coach-title">
+      <div class="section-heading">
+        <p class="eyebrow">Coaching team</p>
+        <h2 id="coach-title">Coach profiles</h2>
+      </div>
+      <div class="card-grid three-column">
+        <article class="coach-card searchable">
+          <span>Football</span>
+          <h3>Coach Kofi Mensah</h3>
+          <p>Technical drills, team discipline, match preparation, and student leadership.</p>
+          <small>Available: Mon, Fri</small>
+        </article>
+        <article class="coach-card searchable">
+          <span>Martial Arts</span>
+          <h3>Coach Ama Boateng</h3>
+          <p>Judo, taekwondo, wrestling safety, confidence, and respectful sparring.</p>
+          <small>Available: Tue, Thu</small>
+        </article>
+        <article class="coach-card searchable">
+          <span>Performance</span>
+          <h3>Coach Naa Aryee</h3>
+          <p>Gymnastics, ballet, flexibility, posture, and movement confidence.</p>
+          <small>Available: Wed, Sat</small>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="home-events-title">
+      <div class="section-heading">
+        <p class="eyebrow">Upcoming fixtures</p>
+        <h2 id="home-events-title">Next academy events</h2>
+      </div>
+      <div class="card-grid three-column">
+        <article class="event-card searchable">
+          <time datetime="2026-06-12">12 Jun</time>
+          <h3>Inter-Hall Games</h3>
+          <p>Football, rugby, and handball fixtures for hall teams and supporters.</p>
+          <a href="events.html">View details</a>
+        </article>
+        <article class="event-card searchable">
+          <time datetime="2026-06-18">18 Jun</time>
+          <h3>Open Trials</h3>
+          <p>Student and community athlete trials across all academy programmes.</p>
+          <a href="register.html">Register</a>
+        </article>
+        <article class="event-card searchable">
+          <time datetime="2026-06-25">25 Jun</time>
+          <h3>Volleyball Friendly</h3>
+          <p>A friendly game and team-building session for registered volleyball teams.</p>
+          <a href="booking.html">Book training</a>
+        </article>
+      </div>
+    </section>
+
     <section class="section split-section" aria-labelledby="media-title">
       <div>
         <p class="eyebrow">Media coverage</p>
@@ -274,14 +359,54 @@
         </article>
       </div>
     </section>
+
+    <section class="section faq-section" aria-labelledby="faq-title">
+      <div class="section-heading">
+        <p class="eyebrow">Questions</p>
+        <h2 id="faq-title">Frequently asked questions</h2>
+      </div>
+      <div class="faq-grid">
+        <details class="faq-item searchable">
+          <summary>Do I need experience before joining?</summary>
+          <p>No. Beginners and returning athletes are welcome. Coaches place each student at the right starting level.</p>
+        </details>
+        <details class="faq-item searchable">
+          <summary>What should I bring to training?</summary>
+          <p>Bring comfortable sportswear, training shoes, water, and any sport-specific kit your coach requests.</p>
+        </details>
+        <details class="faq-item searchable">
+          <summary>Can I try more than one sport?</summary>
+          <p>Yes. Students can explore multiple programmes before choosing a main training pathway.</p>
+        </details>
+        <details class="faq-item searchable">
+          <summary>How do I get updates?</summary>
+          <p>Use the registration form, follow the academy socials, or contact the team through WhatsApp.</p>
+        </details>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
-    <div>
-      <p>Media sourced from Wikimedia Commons and Creative Commons-friendly platforms for educational use.</p>
-      <p class="developer-credit">Developer: <a href="mailto:swanzyak47@gmail.com">swanzyak47@gmail.com</a> | <a href="tel:+233557560806">+233 557 560 806</a></p>
+    <div class="footer-column">
+      <h2>SRC Sports Academy</h2>
+      <p>Structured training, events, booking, and student support for the SRC community.</p>
+      <p class="developer-credit">Developer: <a href="mailto:swanzyak47@gmail.com">swanzyak47@gmail.com</a></p>
     </div>
-    <div class="social-links" aria-label="Social media links">
+    <div class="footer-column">
+      <h2>Quick Links</h2>
+      <a href="register.html">Register</a>
+      <a href="booking.html">Book Now</a>
+      <a href="events.html">Events</a>
+      <a href="about.html">Coaches</a>
+    </div>
+    <div class="footer-column">
+      <h2>Contact</h2>
+      <a href="tel:+233557560806">+233 557 560 806</a>
+      <a href="mailto:swanzyak47@gmail.com">swanzyak47@gmail.com</a>
+      <p>Main field, gym hall, and sports court</p>
+    </div>
+    <div class="footer-column social-links" aria-label="Social media links">
+      <h2>Social</h2>
       <a href="https://www.facebook.com" aria-label="Facebook">Facebook</a>
       <a href="https://www.instagram.com" aria-label="Instagram">Instagram</a>
       <a href="https://www.youtube.com" aria-label="YouTube">YouTube</a>
@@ -289,6 +414,13 @@
   </footer>
 
   <a class="whatsapp-float" href="https://wa.me/233557560806" aria-label="Chat with SRC Sports Academy on WhatsApp">WhatsApp</a>
+  <button class="back-to-top" type="button" aria-label="Back to top">Top</button>
+
+  <div class="lightbox" aria-hidden="true" role="dialog" aria-label="Gallery image preview">
+    <button class="lightbox-close" type="button" aria-label="Close gallery preview">&times;</button>
+    <img src="" alt="">
+    <p></p>
+  </div>
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="javascript/app.js"></script>
