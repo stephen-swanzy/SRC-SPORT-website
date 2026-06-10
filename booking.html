@@ -9,7 +9,7 @@
 <body>
   <header class="site-header">
     <a class="brand" href="index.html">SRC Sports Academy</a>
-    <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">&#9776;</button>
     <nav class="site-nav" aria-label="Main navigation">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -26,6 +26,18 @@
       <p class="eyebrow">Email-based booking</p>
       <h1>Book a training session.</h1>
       <p>Select a sport, date, and time. The page prepares a confirmation message for the academy email team.</p>
+    </section>
+
+    <section class="section availability-grid" aria-labelledby="availability-title">
+      <div class="section-heading">
+        <p class="eyebrow">Session windows</p>
+        <h2 id="availability-title">Popular booking times</h2>
+      </div>
+      <div class="card-grid three-column">
+        <article class="event-card searchable"><time>Weekdays</time><h3>After-class training</h3><p>3:00 PM to 6:00 PM for football, volleyball, martial arts, and gym sessions.</p></article>
+        <article class="event-card searchable"><time>Saturday</time><h3>Development clinics</h3><p>Morning blocks for beginners, skill checks, and coach feedback.</p></article>
+        <article class="event-card searchable"><time>Events</time><h3>Fixture preparation</h3><p>Special booking support before trials, friendlies, and inter-hall competitions.</p></article>
+      </div>
     </section>
 
     <section class="form-section split-section">
@@ -65,6 +77,22 @@
         <h2>Booking Instructions</h2>
         <p>Use your active email address. Coaches will confirm venue, kit requirements, and safety instructions before the session.</p>
         <p>Future versions can connect this booking form to dashboards, payments, and attendance records.</p>
+      </aside>
+    </section>
+
+    <section class="section split-section" aria-labelledby="booking-help-title">
+      <div>
+        <p class="eyebrow">Booking support</p>
+        <h2 id="booking-help-title">What happens after booking?</h2>
+        <ul class="faq-list">
+          <li><strong>Confirmation</strong> The academy prepares an email message with your request details.</li>
+          <li><strong>Coach review</strong> Coaches check sport, time, venue, and training level.</li>
+          <li><strong>Arrival</strong> Students arrive early with kit, water, and any required equipment.</li>
+        </ul>
+      </div>
+      <aside class="notice-box">
+        <h2>Need a faster reply?</h2>
+        <p>Use the WhatsApp button on the home page or call the academy desk for urgent booking questions.</p>
       </aside>
     </section>
   </main>
