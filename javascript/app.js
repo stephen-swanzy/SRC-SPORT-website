@@ -10,6 +10,12 @@
     });
   }
 
+  function setupPageLoader() {
+    setTimeout(function () {
+      $(".page-loader").addClass("hidden");
+    }, 500);
+  }
+
   function setupSearch() {
     $(".site-search").on("input", function () {
       var query = $(this).val().toLowerCase().trim();
@@ -149,6 +155,29 @@
     });
   }
 
+  function setupScheduleDownload() {
+    $(".download-schedule").on("click", function () {
+      var lines = [
+        "SRC Sports Academy Weekly Timetable",
+        "",
+        "Monday: Football drills | 12-16 years | Main field",
+        "Tuesday: Martial arts | 10-18 years | Gym hall",
+        "Wednesday: Gymnastics | 8-14 years | Practice studio",
+        "Thursday: Volleyball | 14-18 years | Sports court",
+        "Friday: Team training | All ages | Field and gym"
+      ];
+      var blob = new Blob([lines.join("\n")], { type: "text/plain" });
+      var url = URL.createObjectURL(blob);
+      var link = document.createElement("a");
+      link.href = url;
+      link.download = "src-sports-academy-timetable.txt";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(url);
+    });
+  }
+
   function setupScrollReveal() {
     var revealItems = $(".section, .search-panel").addClass("reveal");
 
@@ -172,6 +201,7 @@
   }
 
   $(function () {
+    setupPageLoader();
     setupNavigation();
     setupSearch();
     setupProgrammeFilters();
@@ -180,6 +210,7 @@
     setupForum();
     setupLightbox();
     setupBackToTop();
+    setupScheduleDownload();
     setupScrollReveal();
   });
 })(jQuery);

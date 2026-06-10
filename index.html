@@ -7,6 +7,10 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <div class="page-loader" aria-hidden="true">
+    <span>SRC Sports Academy</span>
+  </div>
+
   <header class="site-header">
     <a class="brand" href="index.html" aria-label="SRC Sports Academy home">SRC Sports Academy</a>
     <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">&#9776;</button>
@@ -73,6 +77,30 @@
         <strong>Meet Coaches</strong>
         <small>See the staff supporting each athlete.</small>
       </a>
+    </section>
+
+    <section class="section announcements-section" aria-labelledby="announcements-title">
+      <div class="section-heading">
+        <p class="eyebrow">Academy notices</p>
+        <h2 id="announcements-title">Latest announcements</h2>
+      </div>
+      <div class="announcement-list">
+        <article class="announcement-card searchable">
+          <time datetime="2026-06-10">10 Jun</time>
+          <h3>Friday team training starts at 2:00 PM</h3>
+          <p>Students should arrive 15 minutes early for warm-up and attendance checks.</p>
+        </article>
+        <article class="announcement-card searchable">
+          <time datetime="2026-06-12">12 Jun</time>
+          <h3>Inter-Hall Games registration closes soon</h3>
+          <p>Team captains should confirm player lists with the academy office before match day.</p>
+        </article>
+        <article class="announcement-card searchable">
+          <time datetime="2026-06-15">15 Jun</time>
+          <h3>New beginner martial arts group opening</h3>
+          <p>Judo, taekwondo, and wrestling beginners can join the Tuesday safety clinic.</p>
+        </article>
+      </div>
     </section>
 
     <section class="section" aria-labelledby="features-title">
@@ -218,7 +246,25 @@
       <aside class="notice-box" aria-label="Student support">
         <h2>Student support</h2>
         <p>Get quick answers about registration, equipment, and programme levels with our academy support team.</p>
+        <button class="download-schedule" type="button">Download Timetable</button>
       </aside>
+    </section>
+
+    <section class="section split-section location-section" aria-labelledby="location-title">
+      <div>
+        <p class="eyebrow">Training venues</p>
+        <h2 id="location-title">Find the academy</h2>
+        <p>Training takes place across the main field, gym hall, sports court, and practice studio. Check your booking confirmation for the exact venue.</p>
+        <div class="venue-list">
+          <span>Main Field</span>
+          <span>Gym Hall</span>
+          <span>Sports Court</span>
+          <span>Practice Studio</span>
+        </div>
+      </div>
+      <div class="map-frame">
+        <iframe title="Sports training location map" src="https://www.google.com/maps?q=sports%20field%20Ghana&output=embed" loading="lazy"></iframe>
+      </div>
     </section>
 
     <section class="section" aria-labelledby="gallery-title">
@@ -312,6 +358,30 @@
       </div>
     </section>
 
+    <section class="section media-hub" aria-labelledby="media-hub-title">
+      <div class="section-heading">
+        <p class="eyebrow">Media hub</p>
+        <h2 id="media-hub-title">Highlights and match coverage</h2>
+      </div>
+      <div class="media-hub-grid">
+        <article class="media-card searchable">
+          <span>Video</span>
+          <h3>Football match moments</h3>
+          <p>Use the home hero for moving football energy while keeping quick action links visible.</p>
+        </article>
+        <article class="media-card searchable">
+          <span>Photos</span>
+          <h3>Training gallery</h3>
+          <p>Gallery images can be expanded in a lightbox for a stronger viewing experience.</p>
+        </article>
+        <article class="media-card searchable">
+          <span>Reports</span>
+          <h3>Event recaps</h3>
+          <p>Future updates can include match scores, clinic attendance, and student achievements.</p>
+        </article>
+      </div>
+    </section>
+
     <section class="section pathway-section" aria-labelledby="pathway-title">
       <div class="section-heading">
         <p class="eyebrow">Athlete pathway</p>
@@ -333,6 +403,35 @@
           <h3>Competition</h3>
           <p>Ready athletes join fixtures, clinics, showcases, and inter-hall games with coach support.</p>
         </article>
+      </div>
+    </section>
+
+    <section class="section spotlight-section" aria-labelledby="spotlight-title">
+      <div class="spotlight-image">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Football_in_Bloomington%2C_Indiana%2C_1995.jpg/960px-Football_in_Bloomington%2C_Indiana%2C_1995.jpg" alt="Football athlete in action">
+      </div>
+      <div>
+        <p class="eyebrow">Athlete spotlight</p>
+        <h2 id="spotlight-title">Athlete of the week</h2>
+        <p><strong>Yaw Mensah</strong> is recognised for discipline, teamwork, and consistent football training attendance.</p>
+        <ul class="spotlight-list">
+          <li>Sport: Football</li>
+          <li>Focus: Passing, stamina, leadership</li>
+          <li>Achievement: Led warm-up drills for new students</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section sponsors-section" aria-labelledby="sponsors-title">
+      <div class="section-heading">
+        <p class="eyebrow">Partners</p>
+        <h2 id="sponsors-title">Sponsors and supporters</h2>
+      </div>
+      <div class="sponsor-grid">
+        <article class="sponsor-card searchable">SRC Office</article>
+        <article class="sponsor-card searchable">Sports Directorate</article>
+        <article class="sponsor-card searchable">Student Affairs</article>
+        <article class="sponsor-card searchable">Community Partners</article>
       </div>
     </section>
 
@@ -382,6 +481,19 @@
           <summary>How do I get updates?</summary>
           <p>Use the registration form, follow the academy socials, or contact the team through WhatsApp.</p>
         </details>
+      </div>
+    </section>
+
+    <section class="section contact-desk" aria-labelledby="contact-desk-title">
+      <div>
+        <p class="eyebrow">Need help?</p>
+        <h2 id="contact-desk-title">Contact the academy desk</h2>
+        <p>Use phone, email, or WhatsApp for booking support, venue directions, kit requirements, and programme advice.</p>
+      </div>
+      <div class="contact-actions">
+        <a class="primary-button" href="mailto:swanzyak47@gmail.com?subject=SRC%20Sports%20Academy%20Enquiry">Email Academy</a>
+        <a class="secondary-contact" href="tel:+233557560806">Call Now</a>
+        <a class="secondary-contact" href="https://wa.me/233557560806">WhatsApp</a>
       </div>
     </section>
   </main>
