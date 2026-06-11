@@ -2,12 +2,12 @@
 
 :root {
   --ink: #101828;
-  --navy: #111827;
-  --muted: #5f6c82;
-  --paper: #f4f6f8;
+  --navy: #0f172a;
+  --muted: #667085;
+  --paper: #eef2f7;
   --panel: #ffffff;
   --panel-soft: #ffffff;
-  --line: #d9e0ea;
+  --line: #d8dee8;
   --accent: #b4232d;
   --accent-dark: #8f1d26;
   --gold: #d99a20;
@@ -28,6 +28,7 @@ html {
 body {
   margin: 0;
   font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-size: 16px;
   line-height: 1.6;
   color: var(--ink);
   overflow-x: hidden;
@@ -94,18 +95,18 @@ textarea:focus-visible {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  padding: 0.9rem clamp(1rem, 4vw, 3rem);
-  background: #ffffff;
-  border-bottom: 1px solid var(--line);
-  box-shadow: 0 10px 30px rgba(16, 24, 40, 0.08);
+  padding: 0.82rem clamp(1rem, 4vw, 3rem);
+  background: var(--navy);
+  border-bottom: 1px solid #1e293b;
+  box-shadow: 0 12px 34px rgba(15, 23, 42, 0.18);
 }
 
 .brand {
   font-family: "League Spartan", Arial, Helvetica, sans-serif;
-  font-size: 1.34rem;
+  font-size: 1.42rem;
   font-weight: 900;
   text-decoration: none;
-  color: var(--navy);
+  color: #ffffff;
 }
 
 .site-nav {
@@ -117,17 +118,18 @@ textarea:focus-visible {
 
 .site-nav a {
   text-decoration: none;
-  padding: 0.55rem 0.8rem;
+  padding: 0.58rem 0.82rem;
   border-radius: 8px;
-  color: var(--muted);
-  font-weight: 700;
+  color: #cbd5e1;
+  font-size: 0.96rem;
+  font-weight: 800;
   transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 
 .site-nav a:hover,
 .site-nav a.active {
-  background: #eef2f7;
-  color: var(--ink);
+  background: #1e293b;
+  color: #ffffff;
 }
 
 .site-nav a:hover {
@@ -148,9 +150,9 @@ textarea:focus-visible {
 
 .nav-toggle {
   display: none;
-  border: 1px solid var(--line);
-  background: var(--panel);
-  color: var(--ink);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  background: #ffffff;
+  color: var(--navy);
   border-radius: 8px;
   padding: 0.45rem 0.7rem;
   cursor: pointer;
@@ -198,15 +200,15 @@ textarea:focus-visible {
 .page-hero h1 {
   margin: 0;
   font-family: "League Spartan", Arial, Helvetica, sans-serif;
-  font-size: clamp(3.7rem, 11vw, 8.8rem);
-  line-height: 0.88;
+  font-size: clamp(3rem, 9vw, 7.2rem);
+  line-height: 0.94;
   letter-spacing: 0;
 }
 
 .hero-lead,
 .page-hero p {
   max-width: 700px;
-  font-size: 1.1rem;
+  font-size: clamp(1rem, 1.7vw, 1.2rem);
 }
 
 .hero h1 {
@@ -215,7 +217,6 @@ textarea:focus-visible {
   text-shadow: 0 10px 34px rgba(0, 0, 0, 0.35);
 }
 
-.page-hero h1,
 .section-heading h2,
 .section h2,
 .search-panel h2 {
@@ -224,8 +225,9 @@ textarea:focus-visible {
 
 .page-hero h1 {
   max-width: 850px;
-  font-size: clamp(2.7rem, 7vw, 5rem);
-  line-height: 0.95;
+  color: #ffffff;
+  font-size: clamp(2.35rem, 6vw, 4.35rem);
+  line-height: 1;
 }
 
 .hero-lead {
@@ -345,9 +347,11 @@ textarea:focus-visible {
 
 .page-hero {
   position: relative;
-  border-bottom: 1px solid var(--line);
-  background: #ffffff;
+  border-bottom: 1px solid #1e293b;
+  background: var(--navy);
+  color: #ffffff;
   overflow: hidden;
+  padding: clamp(3rem, 8vw, 5.5rem) clamp(1rem, 4vw, 3rem);
 }
 
 .page-hero::before {
@@ -356,6 +360,14 @@ textarea:focus-visible {
 
 .page-hero * {
   position: relative;
+}
+
+.page-hero .eyebrow {
+  color: #f4c76a;
+}
+
+.page-hero p {
+  color: #dbe4f0;
 }
 
 .feature-card {
@@ -403,7 +415,7 @@ textarea:focus-visible {
 .section h2,
 .search-panel h2 {
   margin: 0;
-  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  font-size: clamp(1.45rem, 2.6vw, 2rem);
 }
 
 .search-panel {
@@ -1473,9 +1485,9 @@ th {
     align-items: stretch;
     gap: 0.5rem;
     padding: 0.75rem 1rem 1rem;
-    background: #ffffff;
-    border-bottom: 1px solid var(--line);
-    box-shadow: 0 18px 40px rgba(16, 24, 40, 0.12);
+    background: var(--navy);
+    border-bottom: 1px solid #1e293b;
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.22);
   }
 
   .site-nav.open {
